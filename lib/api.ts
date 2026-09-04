@@ -4,7 +4,8 @@
 
 import { Property, PropertyFilter, ApiResponse } from './types';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
+// Use relative API path so the client/server both call the local Next.js API by default.
+const API_URL = process.env.NEXT_PUBLIC_API_URL || '/api';
 
 /**
  * Fetch properties with optional filters
